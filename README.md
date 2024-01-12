@@ -17,7 +17,9 @@ The model then counts the frequency of occurrences of each n-gram in the text. F
 
 The frequency information is used to estimate the probability of the occurrence of a specific n-gram given the preceding (n-1) items. This probability is often calculated using the formula:
 
-\[ P(w_n | w_1, w_2, ..., w_{n-1}) = \frac{\text{Count}(w_1, w_2, ..., w_n)}{\text{Count}(w_1, w_2, ..., w_{n-1})} \]
+$$
+P(w_n | w_1, w_2, ..., w_{n-1}) = \frac{\text{Count}(w_1, w_2, ..., w_n)}{\text{Count}(w_1, w_2, ..., w_{n-1})}
+$$
 
 - \(w_1, w_2, ..., w_n\): Words in the sequence.
 - `Count(w_1, w_2, ..., w_n)`: The count of the n-gram in the text.
