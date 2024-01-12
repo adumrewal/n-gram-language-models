@@ -35,4 +35,42 @@ The probabilities of various n-grams are then used to model the likelihood of a 
 
 N-gram models have several advantages, including simplicity and efficiency, but they also have limitations. One notable limitation is the inability to capture long-range dependencies between words since they only consider a fixed number of preceding words.
 
+## N-Gram Modeling in Natural Language Processing
+
+N-gram modeling is a statistical language modeling technique widely used in natural language processing. It involves breaking down a sequence of words into contiguous subsequences of length 'n' and analyzing the frequency of occurrence of these subsequences in a given text or corpus.
+
+### Understanding N-Grams
+
+#### Bigram (2-gram) Example
+
+A common type of n-gram is the bigram, which considers sequences of two adjacent words. Here's an example:
+
+```plaintext
+Text: "The quick brown fox jumps over the lazy dog."
+Bigrams: ["The quick", "quick brown", "brown fox", "fox jumps", "jumps over", "over the", "the lazy", "lazy dog."]
+```
+
+### Trigram (3-gram) Example
+
+```plaintext
+Text: "The quick brown fox jumps over the lazy dog."
+Trigrams: ["The quick brown", "quick brown fox", "brown fox jumps", "fox jumps over", "jumps over the", "over the lazy", "the lazy dog."]
+
 More sophisticated language models, such as neural language models (e.g., transformer-based models like GPT-3), have gained popularity in recent years, as they can capture more complex patterns and dependencies in natural language data compared to traditional n-gram models.
+```
+
+## Applications
+
+N-gram models are fundamental in various natural language processing tasks, including:
+
+- Speech Recognition: Modeling the likelihood of word sequences.
+- Machine Translation: Analyzing and generating translations.
+- Text Generation: Predicting the next word in a sequence.
+
+Explore the power of n-gram modeling in understanding and processing natural language!
+
+### This repository:
+
+Using this repository quickly test out the results of a simple trigram model trained on a corpus of 1.2M words.
+
+If you have any questions, feel free to reach out!
